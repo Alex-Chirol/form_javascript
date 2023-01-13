@@ -10,20 +10,33 @@
 </head>
 
 <body>
-    <form class="form">
-        <label class="form__label" for="name">Nom :</label>
-        <input class="form__input" type="text" id="lastname" name="lastname">
+    <form class="form" id="contactForm">
+        <label class="form__label" for="lastname">Nom :</label>
+        <input class="form__input" type="text" id="lastName" name="lastName" >
+        <label class="error-message" for="lastName" id="lastNameError">Veuillez renseigner votre nom.</label><br><br>
+        
         <label class="form__label" for="firstname">Prénom :</label>
-        <input class="form__input" type="text" id="firstname" name="firstname">
+        <input class="form__input" type="text" id="firstName" name="firstName" >
+        <label class="error-message" for="firstName" id="firstNameError">Veuillez renseigner votre prénom.</label><br><br>
+
+
         <label class="form__label" for="email">Adresse Email :</label>
         <input class="form__input" type="email" id="email" name="email">
+        <label class="error-message" for="email" id="emailError">Veuillez renseigner un email valide.</label><br><br>
+
         <label class="form__label" for="phone">Numéro de téléphone :</label>
         <input class="form__input" type="tel" id="phone" name="phone">
+        <label class="error-message" for="phone" id="phoneError">Veuillez renseigner un numéro de téléphone valide.</label><br><br>
+
         <label class="form__label" for="password">Mot de passe :</label>
         <input class="form__input" type="password" id="password" name="password">
-        <input class="form__submit" type="submit" value="Envoyer">
-    </form>
+        <label class="error-message" for="password" id="passwordError">Veuillez renseigner votre mot de passe.</label><br>
 
+        <input class="form__submit" type="submit">
+    </form>
+    
+<script src="./script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </body>
 
 </html>
