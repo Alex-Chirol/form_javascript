@@ -21,6 +21,11 @@
     font-weight: bold;
 }
 
+.form__label--i {
+    font-style: italic;
+    font-size: 0.8em;
+}
+
 .form__submit {
     width: 100%;
     background-color: blue;

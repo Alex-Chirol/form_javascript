@@ -12,31 +12,35 @@
 <body>
     <form class="form" id="contactForm">
         <label class="form__label" for="lastname">Nom :</label>
-        <input class="form__input" type="text" id="lastName" name="lastName" >
+        <input class="form__input" type="text" id="lastName" name="lastName" placeholder="Ex : John">
         <label class="error-message" for="lastName" id="lastNameError">Veuillez renseigner votre nom.</label><br><br>
-        
+
         <label class="form__label" for="firstname">Prénom :</label>
-        <input class="form__input" type="text" id="firstName" name="firstName" >
-        <label class="error-message" for="firstName" id="firstNameError">Veuillez renseigner votre prénom.</label><br><br>
+        <input class="form__input" type="text" id="firstName" name="firstName" placeholder="Ex : Smith">
+        <label class="error-message" for="firstName" id="firstNameError">Veuillez renseigner votre
+            prénom.</label><br><br>
 
 
         <label class="form__label" for="email">Adresse Email :</label>
-        <input class="form__input" type="email" id="email" name="email">
+        <input class="form__input" type="email" id="email" name="email" placeholder="Ex : johnsmith@gmail.com">
         <label class="error-message" for="email" id="emailError">Veuillez renseigner un email valide.</label><br><br>
 
         <label class="form__label" for="phone">Numéro de téléphone :</label>
-        <input class="form__input" type="tel" id="phone" name="phone">
-        <label class="error-message" for="phone" id="phoneError">Veuillez renseigner un numéro de téléphone valide.</label><br><br>
+        <input class="form__input" type="tel" id="phone" name="phone" placeholder="Ex : 06 00 00 00 00">
+        <label class="error-message" for="phone" id="phoneError">Veuillez renseigner un numéro de téléphone
+            valide.</label><br><br>
 
         <label class="form__label" for="password">Mot de passe :</label>
-        <input class="form__input" type="password" id="password" name="password">
-        <label class="error-message" for="password" id="passwordError">Veuillez renseigner votre mot de passe.</label><br>
+        <input class="form__input" type="password" id="password" name="password" placeholder="Ex : MotDePasse123">
+        <label class="form__label--i" for="">8 caractères obligatoire dont 1 majuscule et 1 chiffre</label><br>
+        <label class="error-message" for="password" id="passwordError">Veuillez renseigner votre mot de
+            passe.</label><br>
 
         <input class="form__submit" type="submit">
     </form>
-    
-<script src="./script.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </body>
 
 </html>
