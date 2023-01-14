@@ -16,42 +16,51 @@
     <form class="form" id="contactForm">
         <label class="form__label" for="name">Prénom & Nom :</label>
         <input class="form__input" type="text" id="name" name="name" placeholder="Ex : John Smith">
-        <label class="error-message" for="name" id="nameError">Veuillez renseigner votre nom et Prénom.</label><br>
+        <label class="error-message" for="name" id="nameError">Veuillez renseigner votre nom et Prénom.</label><br><br>
 
         <label class="form__label" for="email">Adresse :</label>
         <input class="form__input" type="text" id="adress" name="adress" placeholder="Ex : 13 rue de la Paix">
         <label class="error-message" for="adress" id="adressError">Veuillez renseigner une adresse
-            valide.</label><br>
+            valide.</label><br><br>
 
         <label class="form__label" for="phone">Numéro de téléphone :</label>
         <input class="form__input" type="tel" id="phone" name="phone" placeholder="Ex : 06 00 00 00 00">
         <label class="error-message" for="phone" id="phoneError">Veuillez renseigner un numéro de téléphone
-            valide.</label><br>
+            valide.</label><br><br>
 
         <label class="form__label" for="selectSize">Taille :</label>
         <select class="form__input" name="selectSize" id="selectSize">
             <option value="">-- Choisissez une taille --</option>
-            <option value="small">Small 5€</option>
-            <option value="medium">Medium 8€</option>
-            <option value="large">Large 10€</option>
+            <option id="small" value="Small">Small 5€</option>
+            <option id="medium" value="Medium">Medium 8€</option>
+            <option id="large" value="Large">Large 10€</option>
         </select>
         <label class="error-message" for="selectSize" id="selectSizeError">Veuillez choisir une taille de
-            pizza</label><br>
+            pizza</label><br><br>
 
         <label class="form__label" for="selectPizza">Votre pizza :</label>
         <select class="form__input" name="selectPizza" id="selectPizza">
             <option value="">-- Choisissez une pizza --</option>
-            <option value="Pizza Norvégienne">Pizza Norvégienne +2€</option>
-            <option value="Pizza Bianca">Pizza Bianca +3€</option>
-            <option value="Pizza Savoyarde">Pizza Savoyarde +4€</option>
-            <option value="Pizza bolognaise">Pizza bolognaise +1€</option>
-            <option value="Pizza Pepperoni">Pizza Pepperoni +2€</option>
+            <option id="pizzaNorv" value="Pizza Norvégienne">Pizza Norvégienne +2€</option>
+            <option id="pizzaBianca" value="Pizza Bianca">Pizza Bianca +3€</option>
+            <option id="pizzaSav" value="Pizza Savoyarde">Pizza Savoyarde +4€</option>
+            <option id="pizzaBolo" value="Pizza bolognaise">Pizza bolognaise +1€</option>
+            <option id="pizzaPep" value="Pizza Pepperoni">Pizza Pepperoni +2€</option>
         </select>
         <label class="error-message" for="selectPizza" id="selectPizzaError">Veuillez choisir une
             pizza</label><br><br>
 
-        <input class="form__submit" type="submit">
-        <input class="form__submit" type="reset" value="Annuler la commande">
+        <button class="form__submit" type="submit">Commander</button>
+
+    </form>
+
+    <form class="form__cancel" id="formCancel">
+        <label class="form__label" for="buttonCancel">Votre commande est validée</label><br><br>
+        <label class="form__label" for="buttonCancel">Vous avez choisi :</label><br>
+        <label class="form__label label__inner" for="buttonCancel" id="choiseText"></label><br><br>
+        <label class="form__label" for="buttonCancel">Coût :</label><br>
+        <label class="form__label label__inner" for="buttonCancel" id="priceText"></label><br><br>
+        <button class="form__submit" type="submit">Annuler la commande</button>
     </form>
 
     <script src="./script.js"></script>
