@@ -68,6 +68,7 @@ body {
 .label__inner:hover {
     text-decoration: none;
     color: #cb382f;
+    cursor: pointer;
 }
 
 @media screen and (min-width: 600px) {
