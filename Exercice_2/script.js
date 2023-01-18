@@ -21,8 +21,8 @@ contactForm.addEventListener('submit', async (event) => {
         name: false,
         adress: false,
         phone: false,
-        selectPizza: false,
-        selectSize: false
+        selectSize: false,
+        selectPizza: false
     }
 
     const nameError = document.getElementById('nameError');
@@ -94,6 +94,8 @@ contactForm.addEventListener('submit', async (event) => {
     }
 
 })
+
+
 
 
 
