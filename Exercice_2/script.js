@@ -90,12 +90,18 @@ contactForm.addEventListener('submit', async (event) => {
         priceText.innerHTML = `${price} €`;
 
 
-
     }
 
 })
+formCancel.addEventListener('submit', async (event) => {
+    event.preventDefault();
 
+    alert("Votre commande est annulée.")
+    formCancel.style.display = 'none';
+    contactForm.style.display = 'block';
 
+    
+    contactForm.reset();
 
-
+})
 
